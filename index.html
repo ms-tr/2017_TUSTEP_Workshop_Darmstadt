@@ -113,10 +113,8 @@
                                 <dd>Grundlagen</dd>
                                 <dd>TUSCRIPT und XML</dd>
 
-                                <dt class="red"> *Export </dt>
-                                <dd> simpel </dd>
-                                <dd> komplex </dd>
-                                
+                                <dt class="red">#*Import | *Export </dt>
+                                                              
                                 <dt class="red"> *tade</dt>
                                 <dd>Tags vordefinieren</dd>
                                 <dd>Validitätsprüfung</dd>
@@ -146,7 +144,11 @@
                     Das Kommando <code>#*zebe,import</code> sowie<br/>
                     die Anweisung <code>x #*zebe,import</code> öffnen die Beschreibung zum Import RTF-&gt; TF bzw. zum Export TF-&gt; RTF
                 </blockquote>
+                <h2 class="down-50">Flache versus hierarchische Struktur</h2>
+                <p>Wie können flachstrukturierte Daten in eine hierarchische Struktur überführt werden: 
+                <a href="https://tustep.wikispaces.com/TUSTEP-TEI">Musterlösung</a> im TUSTEP-WIKI</p>              
             </div>
+           
             <div class="step">
                 <h1 class="red">03</h1>
                 <h2 class="line-height-one-five"> TUSTEP-Editor</h2>
@@ -168,8 +170,7 @@
                 <h2>Temporäre Editoranweisungen in eine Datei schreiben</h2>
                 <p>lang <code>#e,,modus=!,definitionen=datei</code></p>
                 <p>kurz <code>#e,,!,datei</code></p>
-                    
-
+                 
             </div>
             
             <div class="step"><h1 class="red">Zeigen, Austauschen, Kopieren, Umstellen</h1>
@@ -199,7 +200,7 @@
                     <dt>Shortcut zum Patternmatching</dt>
                     <dd><code>ctrl-k BLANK</code> Anzeige der Optionen</dd>
                 </dl>
-                <blockquote>Patternmatching im <a href="https://tustep.wikispaces.com/Neue+Konventionen">TUSTEP-Wiki</a></blockquote>
+                <blockquote class="down-50">Patternmatching im <a href="https://tustep.wikispaces.com/Neue+Konventionen">TUSTEP-Wiki</a></blockquote>
             </div>
             <div class="step"><h1 class="red">Editoranweisungen für Segmentdateien</h1>
                 <dl>
@@ -214,7 +215,8 @@
                     <dd><code>h,segmentdatei,?</code></dd>
                     <dd><code>alt-h</code></dd>
                 </dl>
-                <blockquote>Segmentdatei im <a href="https://tustep.wikispaces.com/Grundlagen+Segmentdatei">TUSTEP WIKI</a></blockquote>
+                <div>
+                <blockquote class="down-50">Segmentdatei im <a href="https://tustep.wikispaces.com/Grundlagen+Segmentdatei">TUSTEP WIKI</a></blockquote></div>
             </div>
             <div class="step">
                 <div><h1  class="red">Editoranweisungen für Tags</h1>
@@ -266,16 +268,43 @@
                  
              </ul>
          </div>
-            <div class="step"><h1 class="red">Musterskripte</h1>
+            <div class="step">
+                <h1 class="red">Musterskripte</h1>
                 <ul>
-                    <li>Segmentdatei <a href="data/skripte"><code>skripte</code></a></li>
-                </ul></div>
+                    <li>Segmentdatei <a href="data/skripte"><code>skripte</code></a> mit der im Workshop gearbeitet wird.</li>
+                    <li>Weitere TUSCRIPT Lösungen zu mehr oder weniger klassischen Programmieraufgaben finden sich im <a href="http://rosettacode.org/wiki/Category:TUSCRIPT">Rosetta Code</a> Projekt</li>
+                    <li>TUSTEP Kurs in Mainz 2013, <a href="https://tustep.wikispaces.com/TUSCRIPT+-+ITUG+2013+1">Teil I</a> und <a href="https://tustep.wikispaces.com/TUSCRIPT+-+ITUG+2013+2">Teil II</a></li>
+                    <li><a href="https://tustep.wikispaces.com/CGI+%28A.+Kirchhoff%2C+Th.+Kollatz%29">TUSTEP und CGI</a> Workshop Blaubeuren</li>
+                </ul>
+            </div>
             
             <div class="step">
                 <h1 class="red">05</h1>
-                <h2 class="line-height-one-five"> *Export</h2>
+                <h2 class="line-height-one-five">#*Import | *Export</h2>
             </div>
-            
+            <div class="step">
+                <h1 class="red">#*Import | #*Export</h1>
+                <div class="row">
+                    <div class="six columns">
+                        <div class="centered">
+                            <img src="resources/img/import.png" />
+                        </div>
+                    </div>
+                    <div class="six columns">
+                        
+                    <p>Dateiimport (RTF-TUSTEP) und Dateiexport (TUSTEP-RTF) lassen sich auch aus dem Dateimanager heraus aufrufen</p>
+                <ul><li>Vorteil: Nutzerführung und Erläuterungen<ol><li>
+                    Aufruf des Dateimanagers: Gib Kommando: <code>F6</code>
+                </li>
+                <li>Button <code>Makros</code></li>
+                    <li>Auswählen</li>
+                    <li>Standardmakros allgemeiner Art</li>
+                    <li>#*import | #*export auswählen</li>
+                </ol></li></ul>
+                    </div>
+                    
+                </div>
+            </div>
             <div class="step">
                 <h1 class="red">06</h1>
                 <h2 class="line-height-one-five"> *tade</h2>
