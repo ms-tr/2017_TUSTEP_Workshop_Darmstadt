@@ -280,8 +280,9 @@
             <div class="step">
                 <h1 class="red">#*tade</h1>
                 <h2>Valide Tags vordefinieren</h2>
+                <div class="small">
                 <pre>Aus validen oder wohlgeformten XML-Dateien können die entsprechenden Tag-Definitionen 
-                    mit dem Standard-Makro #*TADE erstellt und in eine Datei ausgegeben werden.
+mit dem Standard-Makro #*TADE erstellt und in eine Datei ausgegeben werden.
 
 #INFORMIERE,*TADE
 
@@ -294,7 +295,9 @@ name - Definition Tagname
 tn,name/ = tag darf nur als leeres tag vorkommen
 tn,name&amp; = tag darf als leeres tag, Anfangs- und Endetag vorkommen
 tn,name  = tag darf nur als Anfangs- und Endetag vorkommen
-
+                </pre></div>
+                <div class="step"><h1>#*tade</h1>
+                    <pre>
 attr - Definition Attribut
 tn,name=-;            = keine     Attribute
 tn,name=+;            = beliebige Attribute
@@ -304,9 +307,11 @@ tn,name=?attr1,?attr2 = optionale Attribute
 attr - Definition Attribut:Attributwert
 tn,name=attr1:wert1'wert2 = obligate Attributwerte
 tn,name=attr1:1-10        = obligate Attributwerte: Zahlen von 1-10
-                </pre>
+                </pre></div>
             </div>
             <div class="step">
+                <h1 class="red">#*tade</h1>
+               <div class="medium">
                 <pre>               
 hier - Definition Hierarchiepfade 
 An welchen Stellen in der Taghierarchie ist das unter tn,name definierte Tag erlaubt:
@@ -317,9 +322,10 @@ An welchen Stellen in der Taghierarchie ist das unter tn,name definierte Tag erl
 &lt;tag&gt;[4] = name nur erlaubt als 4. Tag auf der aktuellen Hierarchieebene Tag
 &lt;*&gt;[5]   = name nu erlaubt als 5. Tag auf der aktuellen Hierarchieebene
 
-Mehrere erlaubte Pfade werden durch einfache Begrenzungszeichen getrennt, z.b. /&lt;tag1&gt;/&lt;tag2&gt;/
+Mehrere erlaubte Pfade werden durch einfache Begrenzungszeichen getrennt, 
+z.b. /&lt;tag1&gt;/&lt;tag2&gt;/
 Unerlaubte Pfade durch doppelte Begrenzungszeichen, z.B. /&lt;ja&gt;//&lt;no&gt;//
-</pre>
+</pre></div>
             </div>
             <div class="step">
                 <dl><dt>Tagdefinitionen im Editor</dt>
