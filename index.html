@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TUSTEP Workshop</title>
+
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta name="author" content="Hans-Werner Bartz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+
+        <!-- styles for included libraries -->
+
+        <!-- chartist -->
+        <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" />
+
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+
+        <!-- js needed in head -->
+
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h4 class="down-25"><strong>5. und 6. April 2017 | TU Darmstadt</strong></h4>
+                <h4 class="up-25"><strong><a href="#">workshop: TUSTEP I </a></strong></h4>
+                <h1>TUSTEP</h1>
+                <h2 class="red up-25" style="font-size: 42px;">RTF - TUSTEP - XML</h2>
+                <h4>
+                    <strong>Slides:</strong>
+                    <a href="#" title="View the presentation online"> https://#.github.io/ </a>
+                </h4>
+                <h5>
+                    <strong><a href="http://orcid.org/0000-0003-1904-1841">Thomas Kollatz</a> | <a
+                            href="#">Hans-Werner Bartz</a></strong> | <img
+                        src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                        class="twitter-icon" />
+                    <a href="https://twitter.com/digicademy" title="Digitale Akademie on Twitter"
+                        >@digicademy</a> | <img src="resources/img/Octicons-mark-github.svg"
+                        alt="Twitter" class="gh-icon" />
+                    <a href="https://github.com/#" title="digicademy on GitHub">digicademy</a> | <a
+                        href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+                </h5>
+            </div>
+            <div class="step">
+                <div>
+                    <h2>Gliederung</h2>
+                    <div class="row">
+                        <div class="six columns">
+                            <dl class="toc">
+                                <dt class="red"> Grundlagen </dt>
+                                <dd>Sitzung einrichten</dd>
+                                <dd>Dateitypen</dd>
+                                <dd>Dateimanager</dd>
+
+                                <dt class="red"> *Import</dt>
+                                <dt class="red"> TUSTEP-Editor </dt>
+                                <dd>Grundlagen</dd>
+                                <dd>XML im TUSTEP-editor</dd>
+                            </dl>
+                        </div>
+                        <div class="six columns">
+                            <dl class="toc">
+                                <dt class="red"> TUSCRIPT </dt>
+                                <dd>Grundlagen</dd>
+                                <dd>TUSCRIPT und XML</dd>
+
+                                <dt class="red"> *Export </dt>
+                                <dd> simpel </dd>
+                                <dd> komplex </dd>
+                                
+                                <dt class="red"> *tade</dt>
+                                <dd>Tags vordefinieren</dd>
+                                <dd>Validitätsprüfung</dd>
+
+
+
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <h1 class="red">01</h1>
+                <h2 class="line-height-one-five"> Grundlagen </h2>
+            </div>
+            <div class="step">
+                <h1 class="red">02</h1>
+                <h2 class="line-height-one-five"> *Import</h2>
+            </div>
+            <div class="step">
+                <h1 class="red">Beispieldatei</h1>
+                <p>
+                    <a href="data/dummy.rtf"><code>dummy.rtf</code></a> im Format MS RTF
+                </p>
+                <h2>Handbuch</h2>
+                <blockquote>
+                    Das Kommando <code>#*zebe,import</code> sowie<br/>
+                    die Anweisung <code>x #*zebe,import</code> öffnen die Beschreibung zum Import RTF-&gt; TF bzw. zum Export TF-&gt; RTF
+                </blockquote>
+            </div>
+            <div class="step">
+                <h1 class="red">03</h1>
+                <h2 class="line-height-one-five"> TUSTEP-Editor</h2>
+            </div>
+            <div class="step">
+                <h1 class="red">Nützliches im Editor</h1>
+                <h2>Farben für Tags definieren</h2>
+                <p><code>c1,1=EC:!&lt;*&gt;!</code></p>
+                <h2>Makroleiste definieren</h2>
+                <p><code>y,*=execute</code></p>
+                    
+<p><code>y,execute=CLR_CMD_LINE,“x #ma,tustep.edt“,confirm</code></p>
+            </div>
+            <div class="step"><h1 class="red">Editoranweisungen für Segmentdateien</h1>
+                <dl>
+                    <dt>holen</dt>
+                    <dd><code>h,segmentdatei,segment</code></dd>
+                    <dd><code>h,segmentdatei,segment,-std-</code> (falls Segmentdatei noch nicht angemeldet ist, meldet diese Anweisung die Segmentdatei zum Lesen an)</dd>
+            
+               <dt>retten</dt> 
+                   <dd><code>r,segmentdatei,segment</code></dd>
+                    <dd><code>r!</code></dd>
+                    <dt>Inhaltsverzeichnis aufrufen</dt>
+                    <dd><code>h,segmentdatei,?</code></dd>
+                    <dd><code>alt-h</code></dd>
+                </dl>
+            </div>
+            <div class="step">
+                <div><h1  class="red">Editoranweisungen für Tags</h1>
+                    <div class="row">
+                        <div class="six columns">
+                <dl>
+                    <dt>Tags überprüfen</dt>
+<dd><code>tpv</code>    Tagprüfung vorwärts</dd>
+                    <dd><code>tpr</code>    Tagprüfung rückwärts</dd>
+                    <dt>Tags anzeigen</dt>
+
+                    <dd><code>tl</code>     Tagliste mit Häufigkeit</dd>
+                    <dd><code>tlh</code>    Tagliste mit Hierarchie "von oben" sortiert</dd>
+                    <dd><code>tli</code>    Tagliste mit Hierarchie "von unten" sortiert (invers)</dd>
+                    <dd><code>tz</code>    Tagzeige</dd>
+                    <dd><code>alt-g</code>  SELECT_TAGS</dd>
+                </dl></div>
+                        <div class="six columns">
+                            <dl>
+                    <dt>Tags autovervollständigen</dt>
+<dd><code>alt-a</code>Anfangstag einfügen</dd>
+<dd><code>alt-e</code>Endetag einfügen</dd>
+                    <dt>Weitere Anweisungen</dt>
+<dd><code>alt-t</code></dd>
+<dd><code>alt-v</code></dd>
+<dd><code>alt-r</code></dd>                 
+</dl> </div></div>
+                </div>
+                       
+            </div>
+            <div class="step">
+                <h1 class="red">04</h1>
+                <h2 class="line-height-one-five"> TUSCRIPT</h2>
+            </div>
+         <div class="step">
+             <h1 class="red">Funktionen</h1>
+             <ul>
+                 <li><code>EXTRACT</code></li>
+                 <li><code>CONCAT</code></li>
+                 <li><code>SPLIT</code></li>
+                 <li><code>PRINT</code></li>
+                 <li><code>TRACE * | + | on | off | all</code></li>
+                 <li><code>EXCHANGE</code></li>
+                 <li><code>END_TAG | START_TAG | EMPTY_TAG</code></li>
+                 <li><code>IF … THEN | ELSE | ELSEIF | ENDIF</code></li>
+                 <li><code>SELECT | CASE | DEFAULT | ENDSELECT</code></li>
+                 <li><code>INCLUDE</code></li>
+                 
+                 
+             </ul>
+         </div>
+            <div class="step"><h1 class="red">Musterskripte</h1>
+                <ul>
+                    <li>Segmentdatei <a href="data/skripte"><code>skripte</code></a></li>
+                </ul></div>
+            
+            <div class="step">
+                <h1 class="red">05</h1>
+                <h2 class="line-height-one-five"> *Export</h2>
+            </div>
+            
+            <div class="step">
+                <h1 class="red">06</h1>
+                <h2 class="line-height-one-five"> *tade</h2>
+            </div>
+            <div class="step">
+                <h1 class="red">#*tade</h1>
+                <h2>Valide Tags vordefinieren</h2>
+                <pre>Aus validen oder wohlgeformten XML-Dateien können die entsprechenden Tag-Definitionen 
+                    mit dem Standard-Makro #*TADE erstellt und in eine Datei ausgegeben werden.
+
+#INFORMIERE,*TADE
+
+n=Nummer der Taggruppe
+
+Syntax:
+tn,name=attr;hier;komm
+
+name - Definition Tagname
+tn,name/ = tag darf nur als leeres tag vorkommen
+tn,name&amp; = tag darf als leeres tag, Anfangs- und Endetag vorkommen
+tn,name  = tag darf nur als Anfangs- und Endetag vorkommen
+
+attr - Definition Attribut
+tn,name=-;            = keine     Attribute
+tn,name=+;            = beliebige Attribute
+tn,name=attr1,attr2   = obligate  Attribute
+tn,name=?attr1,?attr2 = optionale Attribute
+
+attr - Definition Attribut:Attributwert
+tn,name=attr1:wert1'wert2 = obligate Attributwerte
+tn,name=attr1:1-10        = obligate Attributwerte: Zahlen von 1-10
+                </pre>
+            </div>
+            <div class="step">
+                <pre>               
+hier - Definition Hierarchiepfade 
+An welchen Stellen in der Taghierarchie ist das unter tn,name definierte Tag erlaubt:
+&lt;tag&gt;    = tag mit dem Namen "tag"
+&lt;*&gt;      = tag mit beliebigem Namen
+*        = 0 oder beliebig viele Tags mit beliebigem Namen
+&lt;&gt;       = name nur erlaubt auf obersten Hierarchiestufe
+&lt;tag&gt;[4] = name nur erlaubt als 4. Tag auf der aktuellen Hierarchieebene Tag
+&lt;*&gt;[5]   = name nu erlaubt als 5. Tag auf der aktuellen Hierarchieebene
+
+Mehrere erlaubte Pfade werden durch einfache Begrenzungszeichen getrennt, z.b. /&lt;tag1&gt;/&lt;tag2&gt;/
+Unerlaubte Pfade durch doppelte Begrenzungszeichen, z.B. /&lt;ja&gt;//&lt;no&gt;//
+</pre>
+            </div>
+            <div class="step">
+                <dl><dt>Tagdefinitionen im Editor</dt>
+                    <dd><code>t</code>      Liste aller Tag-Definition</dd>
+                    <dd><code>t1</code>     schaltet Tag-Definition der Taggruppe 1 bei tpv ein</dd>
+                    <dd><code>t0</code>     schaltet Tag-Definition aus, zurück auf tpv-Standard</dd>
+                </dl>
+                
+                
+            </div>
+            <div class="step">
+                <h2>Literatur</h2>
+                <h4>TUSTEP</h4>
+                <ul class="small">
+                    <li><a href="https://kollatzthomas.github.io/20170108_Variable_vs_Datei/"
+                        >Variable versus Datei</a> Datenverarbeitung mit TUSTEP</li>
+                    <li>to be done</li>
+                    
+                </ul>
+                <h4>Download</h4>
+                <ul class="small">
+                    <li>
+                        <a href="#"> # </a>
+                    </li>
+                    <li> Alle Inhalte, Illustrationen und Bilder sind frei zur Weiterverwendung und
+                        Modifikation.<br /> Lizenz: <a
+                            href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>, <a
+                                href="http://orcid.org/0000-0003-1904-1841">Thomas Kollatz</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script type="text/javascript" src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script type="text/javascript" src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script type="text/javascript" src="resources/js/unite.gallery.js"></script>
+        <!-- chartist -->
+        <script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+        <script src="resources/js/chartist.charts.js"></script>
+        <!-- codemirror -->
+        <script src="vendor/codemirror/lib/codemirror.js"></script>
+        <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+        <script src="vendor/codemirror/mode/sparql/sparql.js"></script>
+        <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("sparql"), {
+            mode: "application/sparql-query",
+            matchBrackets: true,
+            lineNumbers: true,
+            viewportMargin: Infinity
+        });
+    </script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            hashnav: true
+        });
+    </script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+        var obj = impress();
+        obj.init();
+        initSlideNo(obj);
+    </script>
+    </body>
+</html>
